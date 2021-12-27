@@ -1,0 +1,15 @@
+/*** BREADCRUMB ***/
+.breadcrumb {
+  padding-top: 1rem;
+
+  a {
+    font-size: var(--smaller-font-size);
+    color: $gray-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue-color;
+      text-decoration: underline;
+    }
+  }
+}

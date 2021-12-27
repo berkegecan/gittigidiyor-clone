@@ -1,0 +1,88 @@
+/*** Slider Area ***/
+
+.slider-area {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: $white-color;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba($black-color, $alpha: .6);
+
+  // Slider Tabs navs
+  .nav {
+    &-item {
+      height: 100%;
+    }
+
+    &-link {
+      font-size: var(--big-font-size);
+      font-weight: $font-bold;
+      color: $gray-color;
+      padding: 1.5rem 0;
+      border: none;
+      border-bottom: 2px solid transparent;
+
+      &:hover{
+        background-color: $gray-light;
+      }
+    }
+
+    &-link.active {
+      color: $blue-color;
+      border: none;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom: 2px solid $blue-color;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  // Slider Tabs Content
+
+  .tab-content {
+    .tab-pane {
+
+      // Slider Photos
+      .carousel {
+        
+        &-item {
+          padding: 0 1rem;
+          margin-bottom: 1rem;
+          
+          img {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+        }
+      }
+
+      // Slider Profile
+      .slider-profile {
+        padding: 0 0 1rem;
+
+        .profile {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 0 2rem;
+  
+          &-card {
+            border: none;
+            padding: .5rem;
+            img {
+              width: 100%;
+              border-radius: 50%;
+              border: 3px solid rgba($gray-color, $alpha: .3);
+
+              &:hover {
+                border: 3px solid $blue-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// Fiyat Swiper
+.fiyatSwiper {
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+}
+
+
+// Urun Swiper
+.urun-images {
+  .swiper {
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  
+  .urunSwiper2 {
+    height: 50%;
+    width: 100%;
+
+    &:hover {
+      .swiper-button-next,
+      .swiper-button-prev {
+        padding: 2rem;
+        border: 1px solid rgba($gray-color, .6);
+        color: rgba($gray-color, .6);
+        border-radius: 50px;        
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .urunSwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/**** TABLET RESPONSİVE ****/
+@media screen and (max-width: 991px) {
+  /*** HEADER ***/
+  #main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 2rem;
+
+    // Navbar Area
+    #navbar-area {
+      display: none;
+    }
+
+    // Search Area
+    .search-container {
+      padding: 2rem 0;
+
+      .toggle {
+        display: inline-block;
+
+      }
+
+      #user1 {
+        display: flex !important;
+        justify-content: end;
+      }
+
+      #user2 {
+        display: none !important;
+      }
+    }
+
+    // Menu Area
+    .menu-fluid {
+      display: none;
+    }
+  }
+  
+  /*** URUNLER ***/
+  .urunler {
+    &-filtre {
+      display: none;
+    }
+  }
+
+  /*** FOOTER ***/
+  footer {
+    .footer-row-1{
+      &-image {
+        padding: 0 1.5rem !important;
+      }
+    }
+
+    .responsive {
+      &-hide {
+        display: none !important;
+      }
+
+      &-show {
+        display: block !important;
+  
+        .footer-row-3-1 {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &-languages {
+        display: flex !important;
+        align-items: center;
+        font-size: var(--smaller-font-size);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /*** URUN ***/
+  .urun {
+    &-images {
+      &-height {
+        height: 780px !important;
+      }
+    }
+  }  
+}

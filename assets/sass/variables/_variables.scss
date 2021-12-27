@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*=============== Varibles sass ===============*/
+$header-height: 3rem;
+
+/********** Font weight **********/
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+/********** Colors **********/
+$black-color: rgb(51, 51, 51);
+$gray-color: rgb(85, 85, 85);
+$gray-light: rgb(242, 242, 242);
+$blue-color: rgb(54, 101, 243);
+$blue-dark: rgb(6, 18, 53);
+$green-color: rgb(54, 180, 88);
+$yellow-color: rgb(255,210,125);
+$red-color: rgb(205, 55, 42);
+$purple-color: #6b267f;
+$white-color: #fff;
+
+/********** Z-index **********/
+$z-fixed: 100; 
+
+/********** Variables CSS **********/
+
+:root {
+  /********** Fonts **********/
+  //$body-font: "Poppins", sans-serif;
+  --body-font: "Roboto", sans-serif;
+
+  --biggest-font-size: 1.75rem;
+  --bigger-font-size: 1.25rem;
+  --big-font-size: 1rem;
+  --normal-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  @media screen and (min-width: 768px) {
+    --biggest-font-size: 2.25rem;
+    --bigger-font-size: 1.75rem;
+    --big-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.813rem;
+  }
+}

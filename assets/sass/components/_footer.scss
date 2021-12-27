@@ -1,0 +1,186 @@
+                /***** FOOTER *****/
+footer {
+  width: 100%;
+  background-color: $white-color;
+  margin-top: 2rem;
+  padding: .5rem 0;
+
+  .footer-row {
+    padding: 1rem 0;
+
+    // Footer Row 1
+    &-1 {
+      > h3 {
+        padding: 2rem 0 3rem 1rem;
+      }
+
+      &-text {
+        border-right: 1px solid rgba($gray-color, $alpha: .3);
+
+        p {
+          line-height: 1.75rem;
+          margin-bottom: 1.5rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5rem;
+
+        img {
+          width: 100%;
+          margin: .5rem 0;
+        }
+      }
+    }
+
+    // Footer Row 2
+    &-2 {
+      padding: 1rem 0;
+
+      .row {
+        h3 {
+          padding: 1rem 0 1rem .5rem;
+        }
+
+        a {
+          text-decoration: none;
+          margin-bottom: 1rem;
+          font-size: var(--smaller-font-size);
+          color: $black-color;
+
+          &:hover {
+            color: $blue-color;
+          }
+        }
+      }
+    }
+
+    // Footer Row 3
+    &-3 {
+      display: flex;
+      align-items: center;
+
+      .social {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 1rem;
+        border-radius: 50%;
+        color: $white-color;
+        cursor: pointer;
+      }
+
+      .face {
+        background: rgb(57, 89, 150);
+        padding: .65rem .95rem;
+      }
+
+      .twit {
+        background: rgb(67, 147, 206);
+        padding: .65rem;
+      }
+
+      .insta {
+        background: rgb(216, 51, 119);
+        padding: .65rem .7rem;
+      }
+
+      .youtube {
+        background: rgb(229, 36, 37);;
+        padding: .65rem .50rem;
+      }
+
+      .linkedin {
+        background: rgb(0, 118, 180);
+        padding: .65rem .9rem;
+      }
+
+      .blog {
+        background: transparent;
+        border: 1px solid $black-color;
+        padding: .65rem;
+        color: $black-color !important;
+      }
+    }
+
+    // Footer Row 3.1 Responsive
+    &-3-1 {
+      display: none;
+    }
+
+    // Footer Row 4
+    &-4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .guven {
+        display: flex;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+        }
+        
+        span {
+          margin-left: 1rem;
+          font-weight: $font-semibold;
+          line-height: 1.1;
+          letter-spacing: .5px;
+        }
+      }
+
+      .responsive-languages {
+        display: none;
+      }
+    }
+
+    // Footer Row 5
+    &-5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--smaller-font-size);
+
+      a {
+        padding: 0 .6rem;
+        text-decoration: none;
+        border-right: 1px solid rgba($blue-color, $alpha: .6);
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+// Login Page Footer
+#login-footer {
+  font-size: var(--smaller-font-size);
+  
+  div {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+    a {
+      text-decoration: none;
+      padding: 0 .5rem;
+      border-right: 1px solid rgba($gray-color, $alpha: .6);
+
+      &:first-child,
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+}

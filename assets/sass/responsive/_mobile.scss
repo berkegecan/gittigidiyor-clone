@@ -1,0 +1,134 @@
+@media screen and (max-width: 767px) {
+  /*** HEADER ***/
+  #main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 2rem;
+
+    // Navbar Area
+    #navbar-area {
+      display: none;
+    }
+
+    // Search Area
+    .search-container {
+      padding: 2rem 0 1rem;
+
+      .toggle {
+        display: inline-block;
+
+      }
+
+      #user1 {
+        justify-content: center !important;
+        padding: .5rem 0;
+      }
+
+      #user2 {
+        display: none !important;
+      }
+    }
+
+    // Menu Area
+    .menu-fluid {
+      display: none;
+    }
+  }
+
+  /*** SLIDER AREA ***/
+  .slider-profile {
+    display: none;
+  }
+
+  /*** URUNLER ***/
+  .urunler {
+    &-icerik {
+      &-header {
+        flex-direction: column;
+
+        .btn {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  /*** URUN ***/
+  .urun {
+    &-images {
+      &-height {
+        height: 600px !important;
+      }
+    }
+  }  
+
+  /*** FOOTER ***/
+  footer {
+    .footer-row-1{
+      &-image {
+        display: none !important;
+      }
+    }
+
+    .responsive {
+      &-hide {
+        display: none !important;
+      }
+
+      &-show {
+        display: block !important;
+  
+        .footer-row-3-1 {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &-languages {
+        display: flex;
+        align-items: center;
+        font-size: var(--smaller-font-size);
+      }
+    }
+
+    .footer-row-3 {
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  
+    .footer-row-3-1 {
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 472px) {
+  /*** Footer ***/
+  .footer-row-3 {
+    .social {
+      font-size: var(--normal-font-size);
+      padding: .55rem !important;
+      margin-right: .4rem !important;
+    }
+
+    .face {
+      padding: .45rem .75rem !important;
+    }
+  }
+
+  .footer-row-4 {
+    .guven {
+      margin: auto;
+    }
+
+    .responsive-languages {
+      display: none !important;
+    }
+  }
+}

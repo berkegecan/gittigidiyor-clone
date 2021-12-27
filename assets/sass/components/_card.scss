@@ -1,0 +1,186 @@
+            /***** CARDS *****/
+.card-a {
+  text-decoration: none;
+  color: $black-color;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.card {
+  color: $black-color;
+  position: relative;
+  height: 600px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &-img-top {
+    margin-top: .5rem;
+    margin-left: -.5rem;
+    background-color: $gray-light;
+  }
+
+  &-title {
+    font-weight: $font-semibold;
+    padding: .4rem .8rem 0;
+    font-size: var(--normal-font-size);
+
+    &-span {
+      padding: 0 .8rem;
+      color: $gray-color;
+      font-size: var(--smaller-font-size);
+    }
+  }
+
+  &-fiyat {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: $gray-light;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: $font-semibold;
+
+    > small {
+      font-size: var(--smaller-font-size);
+      color: $gray-color;
+      text-decoration: line-through;
+
+      span {
+        display: inline-block;
+        margin-left: .2rem;
+        margin-bottom: .2rem;
+        color: $green-color;
+      }
+    }
+
+    > p {
+      font-size: var(--big-font-size);
+    }
+
+    &-kazanan {
+      font-size: var(--smaller-font-size);
+
+      small {
+        font-weight: $font-regular;
+      }
+
+      p {
+        display: block;
+        margin-top: .3rem;
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  &-rating {
+    padding: 1rem 0 1rem .5rem;
+    color: $yellow-color;
+
+    p {
+      display: inline-block;
+      margin-left: .3rem;
+      color: $black-color;
+      font-size: var(--smaller-font-size);
+      font-weight: $font-semibold;
+      
+      span {
+        font-weight: $font-regular;
+        color: $gray-color;
+      }
+    }
+  }
+
+  &-super {
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    font-size: var(--smaller-font-size);
+
+    p {
+      width: 100px;
+      padding: .2rem 1rem;
+      background-color: $red-color;
+      border-radius: 50px;
+      color: $white-color;
+    }
+  }
+
+  &-cargo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    font-size: var(--smaller-font-size);
+
+    i {
+      color: $green-color;
+    }
+
+    p {
+      display: inline-block;
+      margin-left: .5rem;
+      color: $gray-color;
+      font-weight: $font-semibold;
+    }
+  }
+
+  &-basari {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    font-size: var(--smaller-font-size);
+
+    i {
+      color: $yellow-color;
+    }
+
+    p {
+      display: inline-block;
+      margin-left: .5rem;
+      color: $gray-color;
+      font-weight: $font-semibold;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .8rem;
+    width: 100%;
+    display: none;
+
+    .btn {
+      color: $white-color !important;
+      margin-left: -1rem !important;
+    }
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 5px rgba($gray-color, $alpha: .6);
+
+    .card-rating {
+      display: none;
+    }
+
+    .card-super {
+      display: none;
+    }
+
+    .card-cargo {
+      display: none;
+    }
+
+    .card-basari {
+      display: none;
+    }
+
+    .card-button {
+      display: block;
+    }
+  }
+}

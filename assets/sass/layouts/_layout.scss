@@ -1,0 +1,32 @@
+// Arrow Link Class
+.git-arrow {
+  display: flex;
+  align-items: center;
+  text-decoration:  none;
+  color: $blue-color;
+
+  .icon {
+    font-size: var(--big-font-size);
+    background-color: $gray-light;
+    border-radius: 50%;
+    padding: .55rem .75rem;
+    margin-right: 1rem;
+  }
+  
+  .arrow {
+    font-size: var(--normal-font-size);
+    margin-left: 1rem;
+  }
+
+  &:hover {
+    color: $blue-color;
+  }
+
+  p {
+    font-weight: $font-semibold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,383 @@
+                /*** URUN ***/
+.urun {
+  display: flex;
+  background: $white-color;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px rgba($gray-color, .3);
+
+  // Ürün İmages
+  &-images {
+    &-height {
+      height: 850px;
+    }
+
+    .urunSwiper2,
+    .urunSwiper .swiper-slide img {
+      padding: 1rem;
+      border: 1px solid rgba($gray-color, .3);
+      border-radius: 10px;
+    }
+  }
+
+  // Ürün İçerik
+  &-icerik {
+    padding-left: 2rem;
+
+    // Header
+    &-header {
+      margin-bottom: 1rem;
+      .super {
+        width: 125px;
+        background-color: $red-color;
+        border-radius: 50px;
+        text-align: center;
+        align-self: center;
+        p {
+          padding: .5rem 1rem;
+          font-weight: $font-semibold;
+          color: $white-color;
+        }
+      }
+
+      .baslik {
+        p {
+          font-size: var(--bigger-font-size);
+          font-weight: $font-semibold;
+          letter-spacing: -1px;
+          margin: 1rem 0;
+        }
+
+        span {
+          font-size: var(--normal-font-size);
+          font-weight: $font-semibold;
+          color: $gray-color;
+        }
+      }
+
+      .rating {
+        padding: 1rem 0;
+        color: $yellow-color;
+
+        p {
+          display: inline-block;
+          margin-left: .3rem;
+          color: $black-color;
+          font-size: var(--normal-font-size);
+          font-weight: $font-semibold;
+          
+          span {
+            font-size: var(--smaller-font-size);
+            font-weight: $font-regular;
+          }
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: $blue-color;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .ozellik {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        ul {
+          list-style: disc;
+          margin-left: 1.2rem;
+
+          li {
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: $font-bold;
+
+          &:hover {
+            color: $blue-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // Fiyat
+    &-fiyat {
+      margin: 1rem 0;
+      padding: 2rem 1.5rem;
+      border-radius: 10px;
+      background-color: $gray-light;
+
+      h3 {
+        font-size: var(--biggest-font-size);
+        font-weight: $font-bold;
+      }
+
+      span {
+        display: block;
+        font-size: var(--smaller-font-size);
+        font-weight: $font-bold;
+        color: rgba($gray-color, .6);
+        margin-top: -.5rem;
+      }
+
+      .world-puan {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        i {
+          color: $purple-color;
+          font-size: var(--big-font-size);
+        }
+        
+        p {
+          margin: 0 1rem 0 .5rem;
+          color: $gray-color;
+
+          strong {
+            font-weight: $font-bold;
+          }
+        }
+
+        a {
+          font-weight: $font-bold;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: $blue-color;
+          }
+        }
+      }
+
+      .cargo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .fa-truck {
+          color: $green-color;
+        }
+
+        .fa-info-circle {
+          color: $blue-color;
+        }
+
+        p {
+          display: inline-block;
+          margin: 0 .5rem;
+          color: $gray-color;
+          font-weight: $font-semibold;
+        }
+      }
+    }
+
+    // Satıcı
+    &-satici {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba($gray-color, .3);
+      h4 {
+        font-weight: $font-semibold;
+        margin-bottom: 1rem;
+      }
+
+      .saticilar {
+        &-row {
+          display: flex;
+          align-items: center;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          &-baslik {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 22%;
+
+            p {
+              font-weight: $font-bold;
+              color: rgba($gray-color, .6);
+            }
+          }
+
+          &-satici {
+            color: $black-color;
+            font-weight: $font-semibold;
+            text-decoration: none;
+            padding: 0 .5rem;
+            border-right: 1px solid rgba($gray-color, .6);
+
+            span {
+              font-size: var(--normal-font-size);
+              color: rgba($gray-color, .6);
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          &-puan {
+            padding: 0 .5rem;
+            border-right: 1px solid rgba($gray-color, .6);
+            font-weight: $font-semibold;
+          }
+
+          &-basari {
+            display: flex;
+            align-items: center;
+            padding: 0 .5rem;
+
+            i {
+              color: $yellow-color;
+              margin-right: .5rem;
+            }
+
+            p {
+              font-weight: $font-semibold;
+            }
+          }
+
+          &-link {
+            margin-left: .5rem;
+            font-weight: $font-bold;
+            text-decoration: none;
+
+            &:hover {
+              color: $blue-color;
+              text-decoration: underline;
+            }
+          }
+
+          &-diger {
+            color: $black-color;
+            text-decoration: none;
+
+            span {
+              font-weight: $font-semibold;
+            }
+          }
+        }
+      }
+    }
+
+    // Hafıza ve Renk
+    &-hafizarenk {
+      padding-top: 1rem;
+      div {
+        margin-bottom: 1.5rem;
+
+        h3 {
+          margin-bottom: 1rem;
+          font-weight: $font-bold;
+          color: rgba($gray-color, .7);
+        }
+
+        button {
+          border: 1px solid rgba($gray-color, .3);
+          background-color: transparent;
+          border-radius: 10px;
+          padding: 1rem 3rem;
+
+          &:not(.disabled):hover {
+            border: 1px solid rgba($black-color, .6);
+          }
+        }
+
+        .disabled {
+          background-color: $gray-light;
+        }
+      }
+    }
+
+    // Adet
+    &-adet {
+      padding: 1.5rem;
+      background-color: $gray-light;
+      border-radius: 10px;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .input-group {
+          width: 150px;
+          border: 1px solid rgba($gray-color, .3);
+          border-radius: 10px;
+
+          button {
+            padding: .2rem 1rem;
+            font-size: var(--bigger-font-size);
+            background-color: transparent;
+            color: $blue-color;
+            margin-bottom: .01rem;
+            border-radius: 10px;
+
+            &:hover {
+              background-color: $blue-color;
+              color: $white-color;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          .form-control {
+            padding: .77rem 0;
+            text-align: center;
+            background-color: $white-color;
+          }
+        }
+
+        p {
+          display: inline-block;
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+          font-weight: $font-semibold;
+
+          span {
+            padding-right: .5rem;
+            border-right: 1px solid rgba($gray-color, .6);
+            margin-right: .5rem;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        .btn {
+          width: 48%;
+          padding: 1rem 0;
+          font-weight: $font-semibold;
+
+          &-white {
+            background-color: $white-color;
+            color: $blue-color;
+            border: 1px solid rgba($gray-color, .3);
+
+            &:hover {
+              border: 1px solid rgba($black-color, .6);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Cep Telefonu - GittiGidiyor</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="main-header">
+      <!-- Navbar -->
+      <div class="container-lg" id="navbar-area">
+        <div class="d-flex justify-content-end">
+          <nav class="navbar navbar-expand-lg">
+            <div class="pe-5">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Süper Fiyatlar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tüm Kampanyalar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Yurdışı Alışveriş</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kazananlar Kulübü</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Satış Yap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Mağaza Aç</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bize Ulaşın</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">İade Süreci</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sipariş Takibi</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Seacrh Area -->
+      <div class="container-fluid mb-3" id="search-area">
+        <div class="container-lg">
+          <div class="row search-container">
+            <!-- Toggle -->
+            <div class="toggle col-md-1 col-4">
+              <button class="toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#toggleBottom" aria-controls="toggleBottom">
+                <i class="fas fa-bars"></i>
+              </button>
+
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="toggleBottom" aria-labelledby="toggleBottomLabel">
+                <!-- OffCanvas Header -->
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-header-title">Menü</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- OffCanvas Body -->
+                <div class="offcanvas-body">
+                  <!-- Accordion -->
+                  <div class="accordion" id="toggleOffcanvas">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="toggleOffcanvas-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#toggleOffcanvas-collapseOne" aria-expanded="true" aria-controls="toggleOffcanvas-collapseOne">
+                          Hızlı Gözat
+                        </button>
+                      </h2>
+                      <div id="toggleOffcanvas-collapseOne" class="accordion-collapse collapse show" aria-labelledby="toggleOffcanvas-headingOne">
+                        <div class="accordion-body">
+                          <a href="" class="row ps-4">
+                            <div class="accordion-body-row d-flex">
+                              <i class="fas fa-box fa-2x"></i>
+                              <span>Siparişlerim</span>
+                            </div>
+                          </a>
+                          <a href="" class="row ps-4">
+                            <div class="accordion-body-row d-flex">
+                              <i class="far fa-star fa-2x"></i>
+                              <span>Siparişlerim</span>
+                            </div>
+                          </a>
+                          <a href="" class="row ps-4">
+                            <div class="accordion-body-row d-flex">
+                              <i class="fas fa-plane fa-2x"></i>
+                              <span>Yurtdışı Alışveriş</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="toggleOffcanvas-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#toggleOffcanvas-collapseOne" aria-expanded="true" aria-controls="toggleOffcanvas-collapseOne">
+                          Kategoriler
+                        </button>
+                      </h2>
+                      <div id="toggleOffcanvas-collapseOne" class="accordion-collapse collapse show" aria-labelledby="toggleOffcanvas-headingOne">
+                        <div class="accordion-body">
+                          <a href="" class="row ps-3">
+                            <div class="accordion-body-row d-flex">
+                              <span>Cep Telefonu & Aksesuar</span>
+                            </div>
+                          </a>
+                          <a href="" class="row ps-3">
+                            <div class="accordion-body-row d-flex">
+                              <span>Bilgisayar, Tablet</span>
+                            </div>
+                          </a>
+                          <a href="" class="row ps-3">
+                            <div class="accordion-body-row d-flex">
+                              <span>Beyaz Eşya & Küçük Ev Aletleri</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Logo -->
+            <div class="col-xl-2 col-md-3 col-8">
+              <a href="index.html" title="GittiGidiyor"><img alt="GittiGidiyor" src="./assets/img/gglogo.svg"></a>
+            </div>
+            <!-- Enteries Responsive -->
+            <div class="col-md-5 col-md-8 col-12" id="user1">
+              <a href="login.html">
+                <div class="users d-flex px-1">
+                  <div class="users-icon"><i class="far fa-user"></i></div>
+                  <div class="users-text">Giriş Yap <br><small>veya Üye Ol</small></div>
+                </div>
+              </a>
+              <a href="">
+                <div class="users d-flex px-1">
+                  <div class="users-icon"><i class="fas fa-shopping-cart"></i></div>
+                  <div class="users-text">Sepetim</div>
+                </div>
+              </a>
+            </div>
+            <!-- Search Bar -->
+            <div class="col-xl-7 col-lg-5 col-12 ps-3 py-2 position-relative search">
+              <form>
+                <div class="d-flex align-items-center" >
+                  <div class="input-group-append w-100 d-flex search-bar">
+                    <span class="d-inline-block my-auto ps-3"><i class="fas fa-search text-secondary"></i></span>
+                    <input class="form-control bg-transparent py-3 border-0" type="search" placeholder="Keşfetmeye Bak" aria-label="Search">
+                  </div>
+                  <button class="btn btn-primary position-absolute end-0 py-3 px-5" type="submit">BUL</button>
+                </div>
+              </form>
+            </div>
+            <!-- Enteries -->
+            <div class="col-xl-3 col-lg-4 d-flex justify-content-center" id="user2">
+              <a href="login.html">
+                <div class="users d-flex px-1">
+                  <div class="users-icon"><i class="far fa-user"></i></div>
+                  <div class="users-text">Giriş Yap <br><small>veya Üye Ol</small></div>
+                </div>
+              </a>
+              <a href="">
+                <div class="users d-flex px-1">
+                  <div class="users-icon"><i class="fas fa-shopping-cart"></i></div>
+                  <div class="users-text">Sepetim</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menü -->
+      <div class="container-fluid menu-fluid">
+        <div class="container-lg">
+          <nav class="menu">
+            <ul>
+              <!-- Elektronik Category -->
+              <li>
+                <p>Elektronik</p>
+                <div class="menu-hover">
+                  <div class="row menu-hover-categories">
+                    <a href="#" class="git-arrow">
+                      <i class="fas fa-mobile-alt icon"></i>
+                      <p data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektronik Kategorisi">Elektronik Kategorisi</p>
+                      <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                  </div>
+                  <div class="row mt-4 d-flex">
+                    <!-- Col 1 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="cep-telefonu.html" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cep Telefonu ve Aksesuar">Cep Telefonu ve Aksesuar</a>
+                        <a href="cep-telefonu.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cep Telefonu">Cep Telefonu</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cep Telefonu Aksesuar">Cep Telefonu Aksesuar</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kılıf">Kılıf</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Şarj Cihazı">Şarj Cihazı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ekran Koruyucu">Ekran Koruyucu</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bluetooth Aksesuar">Bluetooth Aksesuar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kablo">Kablo</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yedek Parça">Yedek Parça</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akıllı Saat">Akıllı Saat</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bilgisayar, Tablet">Bilgisayar, Tablet</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dizüstü(Laptop) Notebook Bilgisayar">Dizüstü(Laptop) Notebook Bilgisayar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yedekleme Üniteleri">Yedekleme Üniteleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çevre Birimleri">Çevre Birimleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Masaüstü Bilgisayar">Masaüstü Bilgisayar</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ipad, Tablet Aksesuar">Ipad, Tablet Aksesuar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tablet">Tablet</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Masaüstü">Masaüstü</a>
+                        <a href="#"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="All-in-One">All-in-One</a>
+                        <a href="#"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mini Masaüstü">Mini Masaüstü</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 2 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tv, Ses ve Görüntü Sistemleri">Tv, Ses ve Görüntü Sistemleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Televizyon">Televizyon</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kulaklık">Kulaklık</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Uydu Alıcıları">Uydu Alıcıları</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Beyaz Eşya">Beyaz Eşya</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çamaşır Makinesi">Çamaşır Makinesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buzdolabı">Buzdolabı</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ankastre Set">Ankastre Set</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ocak">Ocak</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fırınlar">Fırınlar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bulaşık Makinesi">Bulaşık Makinesi</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektrikli Ev Aletleri">Elektrikli Ev Aletleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektrikli Süpürge">Elektrikli Süpürge</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektrikli Süpürge Aksesuar">Elektrikli Süpürge Aksesuar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ütü">Ütü</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video Oyun & Konsol">Video Oyun & Konsol</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Oyun Konsolu">Oyun Konsolu</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 3 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektrikli Mutfak Aletleri">Elektrikli Mutfak Aletleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Blender">Blender</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kahve Makinesi">Kahve Makinesi</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çay Makinesi">Çay Makinesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tost Makinesi">Tost Makinesi</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Isıtma Soğutma Sistemi">Isıtma Soğutma Sistemi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Klima">Klima</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vantilatör">Vantilatör</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Radyatör ve Isıtıcılar">Radyatör ve Isıtıcılar</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fotoğraf, Kamera">Fotoğraf, Kamera</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dijital Fotoğraf Makinesi">Dijital Fotoğraf Makinesi</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Filmli Fotoğraf Makinesi">Filmli Fotoğraf Makinesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video Kamera">Video Kamera</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 4 -->
+                    <div class="col-3">
+                      <div class="menu-hover-image">
+                        <img src="./assets/img/categories/electronic-2x.jpg" alt="Elektronik Kategorisi" class="img-fluid">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <p class="d-inline-block">Elektronik <br><span>Tüm Kategoriler</span></p>
+                          <span class="d-inline-block"><i class="fas fa-arrow-right arrow"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="hr"></div>
+              <!-- Ev, Bahçe, Ofis, Yapı Market Category -->
+              <li>
+                <p>Ev, Bahçe, Ofis, Yapı Market</p>
+                <div class="menu-hover">
+                  <div class="row">
+                    <a href="#" class="git-arrow">
+                      <i class="fas fa-home icon"></i>
+                      <p data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ev, Bahçe, Ofis, Yapı Market Kategorisi">Ev, Bahçe, Ofis, Yapı Market Kategorisi</p>
+                      <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                  </div>
+                  <div class="row mt-4 d-flex">
+                    <!-- Col 1 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mobilya">Mobilya</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Salon, Oturma Odası">Salon, Oturma Odası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yatak Odası">Yatak Odası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çocuk, Genç Odası">Çocuk, Genç Odası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ofis Mobilyaları">Ofis Mobilyaları</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mutfak">Mutfak</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tencere Tava">Tencere Tava</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Düdüklü Tencere">Düdüklü Tencere</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yemek Takımı">Yemek Takımı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çatal, Kaşık, Bıçak Takımı">Çatal, Kaşık, Bıçak Takımı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bardak, Fincan, Kupa">Bardak, Fincan, Kupa</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saklama Kabı">Saklama Kabı</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ev Tekstili">Ev Tekstili</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Halı">Halı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Perde">Perde</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nevresim Takımı">Nevresim Takımı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yastık">Yastık</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yorgan">Yorgan</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pike">Pike</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Battaniye">Battaniye</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Koltuk Örtü">Koltuk Örtü</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kırlent">Kırlent</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çeyiz Seti">Çeyiz Seti</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bornoz">Bornoz</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Banyo Paspası">Banyo Paspası</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 2 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bahçe">Bahçe</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bahçe Mobilyaları">Bahçe Mobilyaları</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Salıncak">Salıncak</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mangal, Barbekü">Mangal, Barbekü</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bahçe Makineleri">Bahçe Makineleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El Aletleri">El Aletleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çiçek">Çiçek</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saksı">Saksı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sulama">Sulama</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tohum">Tohum</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bahçe Kovucular">Bahçe Kovucular</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aydınlatma">Aydınlatma</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Led Ampül">Led Ampül</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Avize, Sarkıt">Avize, Sarkıt</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lambader">Lambader</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bahçe, Dış Ortam Aydıtlatması">Bahçe, Dış Ortam Aydıtlatması</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Banyo">Banyo</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lavabo Bataryası">Lavabo Bataryası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Duş Seti">Duş Seti</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Banyo Bataryası">Banyo Bataryası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Duşakabin">Duşakabin</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Klozet">Klozet</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lavabo">Lavabo</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Duş Kanalı">Duş Kanalı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fan">Fan</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Banyo Seti">Banyo Seti</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çamaşırlık">Çamaşırlık</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ütü Masası">Ütü Masası</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 3 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yapı Market, Tamirat">Yapı Market, Tamirat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Matkap">Matkap</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elektrikli Alet Edavat">Elektrikli Alet Edavat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Taşlama Makinesi">Taşlama Makinesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lehim, Kaynak Makinesi">Lehim, Kaynak Makinesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jeneratör">Jeneratör</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Merdiven">Merdiven</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boya ve Boya Malzemeleri">Boya ve Boya Malzemeleri</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Duvar Kağıdı">Duvar Kağıdı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alet Çantası">Alet Çantası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Manuel El Aletleri">Manuel El Aletleri</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dekorasyon">Dekorasyon</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vazo">Vazo</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dekoratif Saat">Dekoratif Saat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ayna">Ayna</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tablo">Tablo</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Biblo">Biblo</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mum">Mum</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ofis, Mırtasiye">Ofis, Mırtasiye</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ofis Malzemeleri">Ofis Malzemeleri</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ofis Elektroniği">Ofis Elektroniği</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yazı Tahtası">Yazı Tahtası</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kalem">Kalem</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="A4 Kağıdı">A4 Kağıdı</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 4 -->
+                    <div class="col-3">
+                      <div class="menu-hover-image">
+                        <img src="./assets/img/categories/home-garden-office-2x.jpg" alt="Ev Bahçe Kategorisi" class="img-fluid">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <p class="d-inline-block">Ev, Bahçe,<br>Ofis, Yapı<br>Market<br><span>Tüm Kategoriler</span></p>
+                          <span class="d-inline-block"><i class="fas fa-arrow-right arrow"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="hr"></div>
+              <!-- Moda Category -->
+              <li>
+                <p class="menu-underline">Moda</p>
+                <div class="menu-hover">
+                  <div class="row">
+                    <a href="#" class="git-arrow">
+                      <i class="fas fa-tshirt icon"></i>
+                      <p data-bs-toggle="tooltip" data-bs-placement="bottom" title="Moda Kategorisi">Moda Kategorisi</p>
+                      <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                  </div>
+                  <div class="row mt-4 d-flex">
+                    <!-- Col 1 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Erkek">Erkek</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ayakkabı">Ayakkabı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Spor Ayakkabı">Spor Ayakkabı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Giyim">Giyim</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yağmurluk">Yağmurluk</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="İç Giyim">İç Giyim</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cinsel, Fantazi Ürünler">Cinsel, Fantazi Ürünler</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aksesuar">Aksesuar</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çanta, Cüzdan">Çanta, Cüzdan</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Güneş Gözlüğü">Güneş Gözlüğü</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saat">Saat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unisex Giyim, Aksesuar">Unisex Giyim, Aksesuar</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın">Kadın</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ayakkabı">Ayakkabı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Spor Ayakkabı">Spor Ayakkabı</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Giyim">Giyim</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın İç Giyim Takımları">Kadın İç Giyim Takımları</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cinsel, Fantazi Ürünler">Cinsel, Fantazi Ürünler</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın Plaj Giyim">Kadın Plaj Giyim</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın Çanta">Kadın Çanta</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın Saç Aksesuar">Düdüklü Tencere</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın Güneş Gözlüğü">Kadın Güneş Gözlüğü</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saat">Saat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unisex Giyim, Aksesuar">Unisex Giyim, Aksesuar</a>
+                      </div>
+                    </div>
+                    <!-- Col 2 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çocuk Giyim">Çocuk Giyim</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kız Çocuk(3-14)">Kız Çocuk(3-14)</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Erkek Çocuk(3-14)">Erkek Çocuk(3-14)</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unisex Çocuk(3-14)">Unisex Çocuk(3-14)</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çocuk Ayakkabı">Çocuk Ayakkabı</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nikah, Düğün">Nikah, Düğün</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nikah, Nişan">Nikah, Nişan</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kına Gecesi">Kına Gecesi</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Gelinlik Aksesuarları">Gelinlik Aksesuarları</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Çeyiz Sandığı">Çeyiz Sandığı</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ziynet, Külçe Altın">Ziynet, Külçe Altın</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Külçe Altın">Külçe Altın</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ziynet Altın">Ziynet Altın</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bilezik">Bilezik</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                    </div>
+                    <!-- Col 3 -->
+                    <div class="col-3">
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saat">Saat</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Erkek">Erkek</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kadın">Kadın</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unisex">Unisex</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mücevher, Değerli Taş">Mücevher, Değerli Taş</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kolye">Kolye</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bilezik, Bileklik">Bilezik, Bileklik</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Yüzük">Yüzük</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kolye Ucu, Madalyon">Kolye Ucu, Madalyon</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Küpe">Küpe</a><br>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tümünü Gör" class="tumunu-gor">Tümünü Gör</a>
+                      </div>
+                      <div class="menu-hover-links">
+                        <a href="#" class="menu-hover-links-header" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Seyahat Çantası, Valiz Seti">Seyahat Çantası, Valiz Seti</a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Seyahat Çantası, Valiz Seti">Seyahat Çantası, Valiz Seti</a>
+                      </div>
+                    </div>
+                    <!-- Col 4 -->
+                    <div class="col-3">
+                      <div class="menu-hover-image">
+                        <img src="./assets/img/categories/fashion-2x.jpg" alt="Ev Bahçe Kategorisi" class="img-fluid">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <p class="d-inline-block">Moda<br><span>Tüm Kategoriler</span></p>
+                          <span class="d-inline-block"><i class="fas fa-arrow-right arrow"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="hr"></div>
+              <!-- Kozmatik, Kişisel Bakım Category -->
+              <li>
+                <p>Kozmatik, Kişisel Bakım</p>
+                <div class="menu-hover">
+                  <ul>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                    <li>Denemelik 2</li>
+                  </ul>
+                </div>
+              </li>
+              <div class="hr"></div>
+              <!-- Anne, Bebek Category -->
+              <li>
+                <p>Anne, Bebek</p>
+              </li>
+              <div class="hr"></div>
+              <!-- Süpermarket, Evcil Hayvan Category -->
+              <li>
+                <p>Süpermarket, Evcil Hayvan</p>
+              </li>
+              <div class="hr"></div>
+              <!-- Kitap, Müzik, Oyuncak, Hobi Category -->
+              <li>
+                <p>Kitap, Müzik, Oyuncak, Hobi</p>
+              </li>
+              <div class="hr"></div>
+              <!-- Otomobil, Motosiklet Category -->
+              <li>
+                <p>Otomobil, Motosiklet</p>
+              </li>
+              <div class="hr"></div>
+              <!-- Spor, Outdoor Category -->
+              <li>
+                <p>Spor, Outdoor</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <main>
+      <!-- Breadcrumb -->
+      <div class="container-lg">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+            <li class="breadcrumb-item"><a href="#">Elektronik</a></li>
+            <li class="breadcrumb-item"><a href="#">Cep Telefonu & Aksesuar</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="cep-telefonu.html">Cep Telefonu</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Ürünler -->
+      <div class="urunler">
+        <div class="container-lg d-flex">
+          <!-- Urunler Filtre -->
+          <div class="col-lg-3 urunler-filtre">
+            <div class="accordion" id="urunlerfiltre">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="urunlerfiltre-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#urunlerfiltre-collapseOne" aria-expanded="true" aria-controls="urunlerfiltre-collapseOne">
+                    Kategoriler
+                  </button>
+                </h2>
+                <div id="urunlerfiltre-collapseOne" class="accordion-collapse collapse show" aria-labelledby="urunlerfiltre-headingOne">
+                  <div class="accordion-body">
+                    <div class="accordion-body-category">
+                      <a href="#"><h5>Cep Telefonu & Aksesuar</h5></a>
+                      <a href="cep-telefonu.html"><span>Cep Telefonu</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="urunlerfiltre-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#urunlerfiltre-collapseTwo" aria-expanded="false" aria-controls="urunlerfiltre-collapseTwo">
+                    Popüler Filtreler
+                  </button>
+                </h2>
+                <div id="urunlerfiltre-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="urunlerfiltre-headingTwo">
+                  <div class="accordion-body">
+                    <div class="form-check form-switch accordion-body-switch">
+                      <label class="form-check-label" for="superfiyat">Süper Fiyat <span>(6)</span></label>
+                      <input class="form-check-input" type="checkbox" id="superfiyat">
+                    </div>
+                    <div class="form-check form-switch accordion-body-switch">
+                      <label class="form-check-label" for="ucretsizkargo">Ücretsiz Kargo <span>(2.178)</label>
+                      <input class="form-check-input" type="checkbox" id="ucretsizkargo">
+                    </div>
+                    <div class="form-check form-switch accordion-body-switch">
+                      <label class="form-check-label" for="aynigunkargo">Aynı Gün Kargo <span>(1.782)</span></label>
+                      <input class="form-check-input" type="checkbox" id="aynigunkargo">
+                    </div>
+                    <div class="form-check form-switch accordion-body-switch">
+                      <label class="form-check-label" for="basarilisatici">Başarılı Satıcı <span>(1.641)</span></label>
+                      <input class="form-check-input" type="checkbox" id="basarilisatici">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="urunlerfiltre-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#urunlerfiltre-collapseThree" aria-expanded="false" aria-controls="urunlerfiltre-collapseThree">
+                    Seçili Kriterlerde Ara
+                  </button>
+                </h2>
+                <div id="urunlerfiltre-collapseThree" class="accordion-collapse collapse show" aria-labelledby="urunlerfiltre-headingThree">
+                  <div class="accordion-body">
+                    <!-- Search Bar -->
+                    <div class="input-group accordion-body-search">
+                      <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" placeholder="Ara" aria-label="Ara"/>
+                      </div>
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="urunlerfiltre-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#urunlerfiltre-collapseFour" aria-expanded="false" aria-controls="urunlerfiltre-collapseFour">
+                    Fiyat
+                  </button>
+                </h2>
+                <div id="urunlerfiltre-collapseFour" class="accordion-collapse collapse show" aria-labelledby="urunlerfiltre-headingFour">
+                  <div class="accordion-body">
+                    <!-- Search Bar -->
+                    <div class="input-group accordion-body-search">
+                      <input type="text" class="form-control brno-right" placeholder="En az" aria-label="En az">
+                      <span class="input-group-text">-</span>
+                      <input type="text" class="form-control brno-left" placeholder="En çok" aria-label="En çok">
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <!-- Fiyat Check Options -->
+                    <div class="accordion-body-checkfiyat">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="0-25" id="fiyat1">
+                        <label class="form-check-label" for="fiyat1">
+                          0-25 <span>(10)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="25-50" id="fiyat2">
+                        <label class="form-check-label" for="fiyat2">
+                          25-50 <span>(35)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="50-100" id="fiyat3">
+                        <label class="form-check-label" for="fiyat3">
+                          50-100 <span>(80)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="100-250" id="fiyat4">
+                        <label class="form-check-label" for="fiyat4">
+                          100-250 <span>(353)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="250-500" id="fiyat5">
+                        <label class="form-check-label" for="fiyat5">
+                          250-500 <span>(211)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="500-750" id="fiyat6">
+                        <label class="form-check-label" for="fiyat6">
+                          500-750 <span>(76)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="750-1000" id="fiyat7">
+                        <label class="form-check-label" for="fiyat7">
+                          750-1000 <span>(110)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1000-1500" id="fiyat8">
+                        <label class="form-check-label" for="fiyat8">
+                          1000-1500 <span>(217)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1500-2000" id="fiyat9">
+                        <label class="form-check-label" for="fiyat9">
+                          1500-2000 <span>(256)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2000-2500" id="fiyat10">
+                        <label class="form-check-label" for="fiyat10">
+                          2000-2500 <span>(216)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2500" id="fiyat11">
+                        <label class="form-check-label" for="fiyat11">
+                          2500 <span>(1.365)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Urunler Icerik -->
+          <div class="col-lg-9 col-12 urunler-icerik">
+            <!-- Urunler Icerik Header -->
+            <div class="urunler-icerik-header">
+              <div>
+                <p><span>Cep Telefonu</span> kategorisinde <span>2929</span> adet ürün bulundu.</p>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="secimler" data-bs-toggle="dropdown" aria-expanded="false">
+                  Akıllı Sıralama
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="secimler">
+                  <li><a class="dropdown-item active" href="#">Akıllı Sıralama</a></li>
+                  <li><a class="dropdown-item" href="#">Yeni Gelenler</a></li>
+                  <li><a class="dropdown-item" href="#">Fiyata Göre (Önce En Yüksek)</a></li>
+                  <li><a class="dropdown-item" href="#">Fiyata Göre (Önce En Düşük)</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Urunler Icerik Body -->
+            <div class="urunler-icerik-body">
+              <div class="urunler-icerik-body-boyut">
+                <p>Ürünü hangi ekran boyutu için arıyorsunuz?</p>
+                <div>
+                  <a href="#">3.5" altı</a>
+                  <a href="#">3.5" - 3.9"</a>
+                  <a href="#">4.0" - 4.4"</a>
+                  <a href="#">4.5" - 4.9"</a>
+                  <a href="#">5.0" - 5.4"</a>
+                  <a href="#">5.5" - 6.0"</a>
+                  <a href="#">6.0" üstü</a>
+                </div>
+              </div>
+              <div class="row gx-2 urunler-icerik-body-row">
+                <!-- Row 1 Col 1 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="oppo-reno-4-lite.html" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/sliders/fiyat/697271118_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Oppo Reno 4 Lite 128GB Siyah (Oppo Türkiye Garantili</h5>
+                        <div class="card-fiyat">
+                          <p>4.199,00 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>4.2 <span>(45)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 1 Col 2 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/sliders/fiyat/709836416_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">General Mobile GM5 Plus 32GB Space Gray (General...</h5>
+                        <div class="card-fiyat">
+                          <p>1.729,00 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>4.3 <span>(240)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 1 Col 3 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/686208370_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Oppo Reno 4 Pro 256GB Mavi (Oppo Türkiye Garantili)</h5>
+                        <div class="card-fiyat">
+                          <small>6.819,00 TL <span>%6 İNDİRİM</span></small>
+                          <p>6.469,00 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <p>4.6 <span>(29)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 1 Col 4 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/743970657_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Apple iPhone 13 Mini 256 GB StarlightBeyaz - MLK63TU/A</h5>
+                        <div class="card-fiyat">
+                          <small>17.051,58 TL <span>%6 İNDİRİM</span></small>
+                          <p>16.168,58 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half-alt"></i>
+                          <p>4.3 <span>(4)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 2 Col 1 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/743970647_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Apple iPhone 13 Mini 256 GB Kırmızı - MLK83TU/A</h5>
+                        <div class="card-fiyat">
+                          <small>17.051,58 TL <span>%6 İNDİRİM</span></small>
+                          <p>16.168,58 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half-alt"></i>
+                          <p>4.3 <span>(4)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 2 Col 2 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/743979773_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Apple iPhone 13 256 GB Kırmızı - MLQ93TU/A</h5>
+                        <div class="card-fiyat">
+                          <small>18.630,53 TL <span>%6 İNDİRİM</span></small>
+                          <p>17.688,53 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half-alt"></i>
+                          <p>4.5 <span>(17)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 2 Col 3 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/747044680_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Elephone PX Pro 4GB 128GB CEP TELEFONU (2 YIL GARANTİLİ)</h5>
+                        <div class="card-fiyat">
+                          <small>2.395,00 TL <span>%3 İNDİRİM</span></small>
+                          <p>2.325,00 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>3.6 <span>(5)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Row 2 Col 4 -->
+                <div class="col-xl-3 col-sm-4 col-6">
+                  <a href="#" class="card-a">
+                    <div class="card">
+                      <img src="./assets/img/cep-telefonları/756313116_tn30_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy M21 64GB SAMSUNG TÜRKİYE GARANTİLİ</h5>
+                        <p class="card-title-span">
+                          Samsung Galaxy M21 64G...
+                        </p>
+                        <div class="card-fiyat">
+                          <small>3.400,00 TL <span>%8 İNDİRİM</span></small>
+                          <p>3.145,00 TL</p>
+                        </div>
+                        <div class="card-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half-alt"></i>
+                          <p>4.3 <span>(86)</span></p>
+                        </div>
+                        <div class="card-super">
+                          <p>Süper Fiyat</p>
+                        </div>
+                        <div class="card-cargo">
+                          <i class="fas fa-truck"></i>
+                          <p>Ücretsiz - Aynı Gün Kargo</p>
+                        </div>
+                        <div class="card-button">
+                          <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                        </div>
+                        <div class="card-basari">
+                          <i class="fas fa-trophy"></i>
+                          <p>Çok Başarılı Satıcı</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="pagination-section">
+                <nav aria-label="Urunler Arası Geçiş" >
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link">Önceki</a>
+                    </li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"> Sonraki</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-lg">
+        <!-- Footer Row 1 -->
+        <div class="footer-row">
+          <div class="row footer-row-1">
+            <h3 class="h3">GittiGidiyor - Türkiye'nin Öncü Alışveriş Sitesi</h3>
+          </div>
+          <div class="row footer-row-1">
+            <div class="col-xl-9 col-lg-8 col-md-9 col-12 footer-row-1-text">
+              <p>Türkiye’nin ilk online pazaryeri GittiGidiyor, ürün çeşitliliği, avantajlı fiyatları ve %100 güvenli alışverişe olanak sağlayan Sıfır Risk Sistemi ile kurulduğu 2001 yılından bu yana alışveriş tutkunlarının en çok tercih ettiği e-ticaret platformlarından biri olmaya devam ediyor. 2011 yılında, küresel e-ticaret liderlerinden eBay’in bünyesine katılan GittiGidiyor, bir eBay şirketi olmanın sağladığı global deneyimle Türkiye’de sektörüne öncülük ediyor.</p>
+              <p>34.5 milyonu aşkın kayıtlı kullanıcı ve 120 bin satıcıyı bir araya getiren GittiGidiyor, elektronikten dekorasyona, kozmetikten anne bebek ürünlerine, modadan süpermarkete kadar toplam 50 kategoride milyonlarca ürünü avantajlı fiyatlarla sunuyor.</p>
+              <p>GittiGidiyor, KOBİ’lerin ve bireysel satıcıların yanı sıra yerli ve yabancı yüzlerce büyük markanın resmi mağazalarına da ev sahipliği yapıyor. Avantajlı mağaza paketleri, gelişmiş satış araçları ve listeleme promosyonlarıyla GittiGidiyor, hem kurumsal hem de bireysel satıcılar için işlerini kolayca e-ticaretle büyütme fırsatı yaratıyor.</p>
+              <p>Türkiye’nin tüm şehirlerine aynı mesafede milyonlarca ürün seçeneğini bulabileceğiniz GittiGidiyor ile hayatınızı kolaylaştırmanın ve güvenle hızlı alışveriş yapmanın keyfini çıkarın!</p>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-3 footer-row-1-image">
+              <img src="./assets/img/best-company.jpg" alt="En İyi Şirket Ödülü">
+              <img src="./assets/img/superbrands-logo21.jpg" alt="En İyi Müşteri Deneyimi Ödülü">
+            </div>
+          </div>
+        </div>
+        <!-- Footer Row 2 -->
+        <div class="footer-row">
+          <div class="row footer-row-2">
+            <!-- Col 1 -->
+            <div class="col-md-3 col-6">
+              <div class="row">
+                <h3 class="h3">GittiGidiyor</h3>
+              </div>
+              <div class="row">
+                <a href="#">Hakkımızda</a>
+                <a href="#">Sıfır Risk Sistemi</a>
+                <a href="#">Yardım & Müşteri Hizmetleri</a>
+                <a href="#">Kazananlar Kulübü</a>
+                <a href="#">Site Haritası</a>
+                <a href="#">Markalar</a>
+                <a href="#">Kariyer Fırsatları</a>
+                <a href="#">Kurumsal Blog</a>
+                <a href="#">İletişim</a>
+                <a href="#">GittiGidiyor API</a>
+              </div>
+            </div>
+            <!-- Col 2 -->
+            <div class="col-md-3 col-6">
+              <div class="row">
+                <h3 class="h3">İşlem Rehberi</h3>
+              </div>
+              <div class="row">
+                <a href="#">Nasıl Ürün Alırım?</a>
+                <a href="#">Ödeme Seçenekleri</a>
+                <a href="#">Alış Sonrası İşlemler</a>
+                <a href="#">Nasıl İade Yapılır?</a>
+                <a href="#">Ekspres Para İadesi</a>
+                <a href="#">Nasıl Satış Yapılır?</a>
+                <a href="#">Satıcı Bilgi Merkezi</a>
+                <a href="#">GittiGidiyor Akademi</a>
+                <a href="#">Ücretsiz Mağaza Açın</a>
+              </div>
+            </div>
+            <!-- Col 3 -->
+            <div class="col-md-6 col-12">
+              <div class="row">
+                <h3 class="h3">Popüler Sayfalar</h3>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <a href="#">iPhone 13</a>
+                    <a href="#">Kombi</a>
+                    <a href="#">Dolap</a>
+                    <a href="#">Farmasi</a>
+                    <a href="#">Avize</a>
+                    <a href="#">Tv Ünitesi</a>
+                    <a href="#">Bluetooth Kulaklık</a>
+                    <a href="#">Macbook</a>
+                    <a href="#">Bebek Bezi</a>
+                    <a href="#">Kış Lastiği</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <a href="#">Kedi Maması</a>
+                    <a href="#">Airpods</a>
+                    <a href="#">Süper Cuma</a>
+                    <a href="#">Sevgililer Günü</a>
+                    <a href="#">Yılbaşı Hediyeleri</a>
+                    <a href="#">Gram Altın</a>
+                    <a href="#">Akıllı Saat</a>
+                    <a href="#">iPhone 8 Plus</a>
+                    <a href="#">Ufo</a>
+                    <a href="#">Yorgan</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <a href="#">Köpek Maması</a>
+                    <a href="#">Bagaj Havuzu</a>
+                    <a href="#">Protein Tozu</a>
+                    <a href="#">Akvaryum</a>
+                    <a href="#">Matkap</a>
+                    <a href="#">El Aletleri</a>
+                    <a href="#">Epilasyon</a>
+                    <a href="#">Buzdolabı</a>
+                    <a href="#">Kitaplık</a>
+                    <a href="#">Antifriz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Footer Row 3 -->
+        <div class="footer-row">
+          <div class="row footer-row-3">
+            <!-- Col 1 -->
+            <div class="col-lg-2 col-md-4 col-12">
+              <h3 class="h3">Bizi Takip Edin</h3>
+            </div>
+            <!-- Col 2 -->
+            <div class="col-lg-5 col-md-8 col-12">
+              <a class="social face">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a class="social twit">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a class="social insta">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a class="social youtube">
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+              <a class="social linkedin">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+              <a class="social blog">
+                <i class="fas fa-blog fa-2x"></i>
+              </a>
+            </div>
+            <!-- Col 3 -->
+            <div class="col-lg-4 responsive-hide">
+              <h3 class="h3">Mobil Uygulamaları Keşfet</h3>
+            </div>
+            <!-- Col 4 -->
+            <div class="col-lg-1 responsive-hide">
+              <div class="d-flex">
+                <a href="#" class="me-2">
+                  <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                </a>
+                <a href="#" class="me-2">
+                  <i class="fas fa-tablet-alt fa-2x text-success"></i>
+                </a>
+                <a href="#">
+                  <i class="far fa-clock fa-2x text-warning"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Footer Row 3.1 Responsive -->
+        <div class="footer-row responsive-show">
+          <div class="row footer-row-3-1">
+            <!-- Col 1 -->
+            <div class="col-md-6 col-12">
+              <h3 class="h3">Mobil Uygulamaları Keşfet</h3>
+            </div>
+            <!-- Col 2 -->
+            <div class="col-md-6 col-12">
+              <div class="d-flex">
+                <a href="#" class="me-2">
+                  <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                </a>
+                <a href="#" class="me-2">
+                  <i class="fas fa-tablet-alt fa-2x text-success"></i>
+                </a>
+                <a href="#">
+                  <i class="far fa-clock fa-2x text-warning"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="d-none responsive-show">
+        <!-- Footer Row 4 -->
+        <div class="footer-row">
+          <div class="footer-row-4">
+            <div class="guven">
+              <a href="#">
+                <img src="./assets/img/guven-damgasi.png" alt="Güven Damgesı">
+              </a>
+              <span>Güven <br>Damgası</span>
+            </div>
+            <!-- Languages Responsive -->
+            <div class="responsive-languages">
+              <p>eBay Siteleri</p>
+              <div class="languages">
+                <div class="languages-show">
+                  <img src="./assets/img/flags/turkey3x.png" alt="Türkiye">
+                  <span>Türkiye</span>
+                  <i class="fas fa-sort-down down"></i>
+                  <i class="fas fa-sort-up up"></i>
+                </div>
+                <div class="languages-flags">
+                  <!-- Col 1 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/germany3x.png" alt="Almanya">
+                        Almanya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/belgium3x.png" alt="Belçika">
+                        Belçika
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/netherlands3x.png" alt="Hollanda">
+                        Hollanda
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/spain3x.png" alt="İspanya">
+                        İspanya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/malaysia3x.png" alt="Malezya">
+                        Malezya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/taiwan3x.png" alt="Tayvan">
+                        Tayvan
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 2 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/usa3x.png" alt="ABD">
+                        ABD
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/philippines3x.png" alt="Filipinler">
+                        Filipinler
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/hongkong3x.png" alt="HongKong">
+                        HongKong
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/italy3x.png" alt="İtalya">
+                        İtalya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/poland3x.png" alt="Polonya">
+                        Polonya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/vietnam3x.png" alt="Vietnam">
+                        Vietnam
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 3 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/austria3x.png" alt="Avusturya">
+                        Avusturya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/france3x.png" alt="Fransa">
+                        Fransa
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/england3x.png" alt="İngiltere">
+                        İngiltere
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/japan3x.png" alt="Japonya">
+                        Japonya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/singapore3x.png" alt="Singapur">
+                        Singapur
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 4 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/australia3x.png" alt="Avustralya">
+                        Avustralya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/india3x.png" alt="Hindistan">
+                        Hindistan
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/ireland3x.png" alt="İrlanda">
+                        İrlanda
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/canada3x.png" alt="Kanada">
+                        Kanada
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/thailand3x.png" alt="Tayland">
+                        Tayland
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Footer Row 5 -->
+        <div class="footer-row">
+          <div class="footer-row-5">
+            <div class="d-flex">
+              <p>&copy; Copyright 2001-2021 GittiGidiyor.com</p>
+              <a href="#">Gizlilik Politikası</a>
+              <a href="#">Çerez Politikası</a>
+              <a href="#">Kullanıcı Sözleşmesi</a>
+            </div>
+            <div class="d-flex align-items-center responsive-hide">
+              <p>eBay Siteleri</p>
+              <div class="languages">
+                <div class="languages-show">
+                  <img src="./assets/img/flags/turkey3x.png" alt="Türkiye">
+                  <span>Türkiye</span>
+                  <i class="fas fa-sort-down down"></i>
+                  <i class="fas fa-sort-up up"></i>
+                </div>
+                <div class="languages-flags">
+                  <!-- Col 1 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/germany3x.png" alt="Almanya">
+                        Almanya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/belgium3x.png" alt="Belçika">
+                        Belçika
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/netherlands3x.png" alt="Hollanda">
+                        Hollanda
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/spain3x.png" alt="İspanya">
+                        İspanya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/malaysia3x.png" alt="Malezya">
+                        Malezya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/taiwan3x.png" alt="Tayvan">
+                        Tayvan
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 2 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/usa3x.png" alt="ABD">
+                        ABD
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/philippines3x.png" alt="Filipinler">
+                        Filipinler
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/hongkong3x.png" alt="HongKong">
+                        HongKong
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/italy3x.png" alt="İtalya">
+                        İtalya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/poland3x.png" alt="Polonya">
+                        Polonya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/vietnam3x.png" alt="Vietnam">
+                        Vietnam
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 3 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/austria3x.png" alt="Avusturya">
+                        Avusturya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/france3x.png" alt="Fransa">
+                        Fransa
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/england3x.png" alt="İngiltere">
+                        İngiltere
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/japan3x.png" alt="Japonya">
+                        Japonya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/singapore3x.png" alt="Singapur">
+                        Singapur
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Col 4 -->
+                  <div class="col-3">
+                    <div class="row">
+                      <a href="">
+                        <img src="./assets/img/flags/australia3x.png" alt="Avustralya">
+                        Avustralya
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/india3x.png" alt="Hindistan">
+                        Hindistan
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/ireland3x.png" alt="İrlanda">
+                        İrlanda
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/canada3x.png" alt="Kanada">
+                        Kanada
+                      </a>
+                      <a href="">
+                        <img src="./assets/img/flags/thailand3x.png" alt="Tayland">
+                        Tayland
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

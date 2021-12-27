@@ -1,0 +1,239 @@
+/*** URUNLER ***/
+.urunler {
+  // Filtre Column
+  &-filtre {
+    .accordion {
+      // Accordion Header
+      &-button {
+        font-size: var(--big-font-size);
+        font-weight: $font-semibold;
+        color: $black-color;
+        background: $white-color;
+
+        &:focus {
+          background-color: $white-color;
+          box-shadow: none;
+          color: $black-color;
+        }
+      }
+
+      // Accordion Body
+      &-body {
+        // Category
+        &-category {
+          a {
+            color: $black-color;
+            text-decoration: none;
+            font-size: var(--smaller-font-size);
+
+            &:hover {
+              color: $blue-color;
+              text-decoration: underline;
+            }
+
+            h5 {
+              display: block;
+              margin-bottom: 1rem;
+              font-weight: $font-semibold;
+            }
+
+            span {
+              margin-left: .6rem;
+            }
+          }
+        }
+
+        // Switchs
+        &-switch {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 0;
+          
+          &:not(:first-child) {
+            margin: 1rem 0;
+          }
+
+          label {
+            display: inline-block;
+
+            span {
+              font-size: var(--smaller-font-size);
+              color: $gray-color;
+            }
+          }
+
+          input[type="checkbox"] {
+            width: 40px;
+            height: 20px;
+          }
+        }
+
+        // Search Bar
+        &-search {
+          .form-outline {
+            width: 80%;
+            margin: 0;
+            padding: 0;
+          }
+
+          .btn {
+            width: 19%;
+            height: 100%;
+          }
+
+          input:focus {
+            box-shadow: none;
+            border: 1px solid $blue-color;
+          }
+
+          .input-group-text {
+            background: transparent;
+            padding: 0 3px;
+          }
+
+          .brno {
+            &-right {
+              border-right: none;
+            }
+            &-left {
+              border-left: none;
+            }
+          }
+        }
+
+        // Fiyat Check Options
+        &-checkfiyat {
+          margin: 1rem 0;
+          max-height: 200px;
+          overflow-y: auto;
+
+          .form-check {
+            &-input {
+              border-color: rgba($black-color, $alpha: .7);
+            }
+
+            &-label {
+              margin-top: .3rem;
+              font-size: var(--smaller-font-size);
+
+              span {
+                color: $gray-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // İçerik Column
+  &-icerik {
+    margin-left: 10px;
+    border-radius: 10px;
+    background: $white-color;
+    padding: 0 1.5rem;
+    box-shadow: 1px 1px 5px rgba($gray-color, $alpha: .5);
+
+    // Icerik Header
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 0 1rem;
+      border-bottom: 1px solid rgba($gray-color, $alpha: .5);
+
+      p {
+        font-size: var(--normal-font-size);
+        color: $gray-color;
+
+        span {
+          color: $black-color;
+          font-weight: $font-bold;
+        }
+      }
+
+      .btn {
+        border: 1px solid rgba($gray-color, $alpha: .3);
+        width: 200px;
+        justify-content: space-between;
+      }
+    }
+
+    // Icerik Body
+    &-body{
+      // Ekran Boyutu
+      &-boyut {
+        padding: 1rem 0;
+        p {
+          font-weight: $font-bold;
+          padding: 1rem .4rem;
+        }
+
+        div {
+          a {
+            display: inline-block;
+            padding: .75rem 1rem;
+            background-color: $gray-light;
+            border-radius: 50px;
+            font-size: var(--smaller-font-size);
+            font-weight: $font-semibold;
+            text-decoration: none;
+            margin: .5rem 0 .5rem 1rem;
+            border: 1px solid transparent;
+
+            &:hover {
+              border: 1px solid $blue-color;
+              color: $blue-color;
+            }
+          }
+        }
+      }
+
+      // Urun Satırları
+      &-row {
+        display: flex;
+      }
+
+      // Pagination
+      .pagination-section {
+        padding: 1rem 0 2rem;
+
+        .page{
+          &-item {
+            :hover {
+              color: $blue-color;
+              background-color: transparent;
+            }
+
+            .active {
+              background-color: $blue-color;
+              color: $white-color;
+              border-radius: 5px;
+
+              :hover {
+                background-color: inherit;
+                color: inherit;
+                border: none !important;
+                box-shadow: none;
+              }
+            }
+          }
+
+          &-link {
+            border: none;
+            color: $black-color;
+          }
+          
+          
+        }
+
+        .disabled {
+          .page-link {
+            color: rgba($gray-color, $alpha: .5);
+          }
+        }
+      }
+    }
+  }
+}
